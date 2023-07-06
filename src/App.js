@@ -1,8 +1,9 @@
 import './App.css';
+import Container from "./Container"
 
 function App() {
   return (
-    <h1>Hey there</h1>
+    <Container />
   )
 }
 
