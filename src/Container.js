@@ -24,7 +24,7 @@ export default function Container() {
         setClicked(!clicked);
         setTimeout(setItems(prevItems => {
             return prevItems.filter((item, idx) => {
-                return idx !== e.target.id
+                return idx != e.target.id
             });
         }), 2000);
         setCompletedTaks(completedTasks+1);
@@ -34,7 +34,7 @@ export default function Container() {
     }, [items]);
 
     useEffect(() => {
-        if(totalTasks !== 0 && completedTasks !== 0 && totalTasks===completedTasks) {
+        if(totalTasks != 0 && completedTasks != 0 && totalTasks===completedTasks) {
             setTimeout(() => {
                 setMsg("Hurray!! You have completed all of your tasks!!");
             }, 500);
