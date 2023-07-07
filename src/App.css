@@ -39,6 +39,7 @@ input {
   background-color: transparent;
   border-bottom: 2px dashed #fdcb6e;
   letter-spacing: 1.1px;
+  color: rgb(85, 79, 79);
 }
 .btn {
   border: none;
@@ -49,4 +50,34 @@ input {
   color: rgb(85, 79, 79);
   background-color: #fdcb6e;
   cursor: pointer;
+}
+.li {
+  color: rgb(85, 79, 79);
+  margin: 6px;
+  letter-spacing: 1.1px;
+
+}
+p {
+  color: rgb(85, 79, 79);
+  margin-left: 20px;
+}
+.p {
+  color: rgb(85, 79, 79);
+  background-color: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  margin-left: 20px;
+  padding: 10px 20px 10px 10px;
+  border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
